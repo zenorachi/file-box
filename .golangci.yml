@@ -1,0 +1,48 @@
+linters:
+  disable-all: true
+  enable:
+    - gofmt
+    - govet
+    - staticcheck
+    - unconvert
+    - dupl
+    - ineffassign
+    - errcheck
+    - goconst
+    - goheader
+    - goimports
+    - gomodguard
+    - goprintffuncname
+    - govet
+    - ineffassign
+    - misspell
+    - nakedret
+    - nestif
+    - rowserrcheck
+    - sqlclosecheck
+    - staticcheck
+    - typecheck
+    - unconvert
+    - unused
+    - whitespace
+    - durationcheck
+    - forbidigo
+    - forcetypeassert
+    - importas
+    - nilerr
+    - predeclared
+    - thelper
+    - tparallel
+    - wastedassign
+    - promlinter
+    - bodyclose
+
+run:
+  timeout: 1m
+
+issues:
+  exclude-rules:
+    - path: (_test\.go)
+      linters:
+        - dupl
+        - goconst

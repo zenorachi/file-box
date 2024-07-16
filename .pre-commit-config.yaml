@@ -1,0 +1,26 @@
+repos:
+  - repo: local
+    hooks:
+#      - id: version
+#        name: version
+#        entry: ./git-hooks/hook-build.sh
+#        language: script
+#        pass_filenames: false
+#
+#      - id: swagger
+#        name: swagger
+#        entry: ./git-hooks/hook-swagger.sh
+#        language: script
+#        pass_filenames: false
+#
+#      - id: linter
+#        name: linter
+#        entry: ./git-hooks/hook-linter.sh
+#        language: script
+#        pass_filenames: false
+#
+#      - id: tests
+#        name: tests
+#        entry: ./git-hooks/hook-tests.sh
+#        language: script
+#        pass_filenames: false
