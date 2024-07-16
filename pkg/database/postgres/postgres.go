@@ -12,11 +12,11 @@ const (
 )
 
 type DBConfig struct {
-	DSN            string
-	MigrationTable string
-	MaxIdleConns   int
-	MaxOpenConns   int
-	AutoMigrate    bool
+	DSN            string `required:"true"`
+	MigrationTable string `required:"true"  split_words:"true"`
+	MaxIdleConns   int    `required:"false" split_words:"true" default:"100"`
+	MaxOpenConns   int    `required:"false" split_words:"true" default:"10"`
+	AutoMigrate    bool   `required:"false" split_words:"true" default:"false"`
 }
 
 func NewDB(cfg *DBConfig) (*sqlx.DB, error) {
